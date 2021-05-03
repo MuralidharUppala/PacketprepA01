@@ -1,0 +1,59 @@
+FORMS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: red;
+        width: 200px;
+    }
+    </style>
+<body>
+ <form>
+
+ <div> <label for="a">Username<span>*</span></label></div>
+ <input type="text" name="username" placeholder="Enter username" id="a">
+
+ <div><label for="b">Password<span>*</span></label></div>
+<input type="password" name="password" placeholder="Enter Password" id="b" 
+pattern="(?=.*[A-Z])(?=.*[a-z]).{2}" title="Please enter 1 lowercase" required>
+
+<div><label for="c">Mobile number</label></div>
+ <input type="text" name="Mobile"  placeholder="9966006314" id="c" pattern="[0-9]{3,10}" required>
+ 
+ <div><label for="h">EmailID</label></div>
+ <input type="email" name="email" placeholder="@gmail.com" id="h" required>
+ 
+ <div><label for="e">DOB</label></div>
+ <input type="date" name="DOB" placeholder="dd/mm/yyyy" id="e" required>
+ 
+ <div><label>Gender</label></div>
+ 
+ <div><input type="radio" name="M" required><label for="">Male</label></div>
+
+ <div><input type="radio" name="M" required><label for="">Female</label>
+    <br>
+    
+
+
+
+ 
+ 
+ <input type="button"">
+ <option value="">A1</option>
+</select>
+ 
+<input type="submit" value="Submit">
+ 
+</form>
+
+
+</body>
+
+
+</html>
